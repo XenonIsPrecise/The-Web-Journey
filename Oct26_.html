@@ -1,8 +1,78 @@
+<!DOCTYOE html>
 <html>
 
 <head>
-    <title>Oct26_</title>
+    <title>Learning the basics</title>
 </head>
+
 <body>
     Hello my friend, my name is Sujal Acharya
+    
+    <img src="Pics and gifs/giphy.gif" alt="Anime guy reading books looks like a strong wind is around here.">
+    <h3>Hi I like fractions <br><sup>1</sup>/<sub>2</sub>+<sup>1</sup>/<sub>2</sub>=2</h3>
+    <h4>Using HTML Entities
+        <br>&spades;+&#189;=2
+    </h4>
+    <p>Emmet Uses: Visit Emmet Cheat sheet.</p>
+    ol>li.item$*5
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+    <h2>Lets create Form</h2>
+    <form action="/test">
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="Username" id="username" name="username" required minlength="6" maxlength="16">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Password" id="password" name="password" required minlength="6" maxlength="16">
+        </p>
+        <p>
+            More things!
+            <label for="tos">Agree:</label>
+            <input type="checkbox" id="tos" name="tos" checked>
+        </p>
+        <p>
+            Radio Buttons:
+            <label for="extra">Extra Large</label>
+            <input type="radio" id="extra" name="size" value="xl">
+            <label for="large">Large</label>
+            <input type="radio" id="large" name="size" value="l">
+        </p>
+        <p>
+            <label for="gender">Select your gender</label>
+                <select name="gender" id="gender">
+                    <option value="options">Select one</option>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                    <option value="other">other</option>
+                </select>
+        </p>
+        <label for="text">Feedback</label>
+        <textarea name="text" id="text" cols="30" rows="10" name="Feedback"></textarea><br>
+        <button type="submit">Submit</button>
+        <input type="button" value="This is from input element">
+        <input type="submit" value="This is from input element but submits the form"><br>
+        
+    </form>
+    <h3>Hijacking Searches from Websites</h3>
+    <form action="https://www.reddit.com/search/">
+        <input type="text" name="q">
+        <button type="submit">Search Reddit</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button type="submit">Search Youtube</button>
+    </form>
+</body>
+
 </html>
