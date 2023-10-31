@@ -3,4 +3,88 @@ h1{
     font-size: 50px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    text-decoration: wavy underline;
+    text-decoration: wavy underline plum;
+    text-transform: uppercase;
+    font-family: Monospace;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 20px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    color: magenta;
+    
+}
+input[type="password"]{
+    color: red;
+    
+}
+button:hover{
+    background-color: lightskyblue;
+}
+button:active{
+    background-color: greenyellow;
+}
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 1px solid black;
+  }
+  /* DO NOT TOUCH THIS FILE!!!  */
+  /* THIS CODE WILL MAKE SENSE ONCE WE COVER FLEXBOX!  */
+  #board {
+    display: flex;
+    margin: 0 auto;
+    width: 500px;
+    flex-wrap: wrap;
+  }
+
+.square:nth-of-type(2n){
+    background-color:black;
+}
+.square{
+    background-color:red;
+}
+
+.borders{
+    background-color: #06d6a0;
+    width: 100px;
+}
+
+#b1{
+    background-color: #118ab2;
+    border: 1px black;
+    border-width: 5px;
+    border-style: solid;
+    width: 70px;
+}
+#b2{
+    border: 5px solid red;
+    border-left: 7px solid blue;
+}
+.card{
+    width:210px;
+    border: 1px solid grey;
+    
+    border-radius:5px;
+    text-align: center;
+
+}
+
+
+img{
+    width:200px;
+    border: 5px solid rgb(236,183,191);
+    border-radius:50%;
 }
