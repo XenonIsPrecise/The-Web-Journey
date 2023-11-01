@@ -1,0 +1,46 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+nav {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+nav ul{
+    border: 1px solid black; 
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    h1{
+        color: red;
+        font-size: 4em;
+    }
+    nav {
+        align-items: center;
+        flex-direction: column;
+    }
+    nav ul{
+        align-items: center;
+        flex-direction: column;
+    }
+   
+}
+
+
+
