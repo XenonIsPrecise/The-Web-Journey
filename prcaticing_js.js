@@ -45,3 +45,14 @@ let array1 =exampleArray.concat(exampleArray2);
 console.log(array1);
 console.log(array1.includes(2));
 
+let colors = ["red","blue","green","yellow"];
+console.log(colors.slice(0,3));
+console.log(colors);
+console.log(colors.slice(-2));
+console.log(colors.splice(1,2))
+console.log(colors);
+console.log(colors.splice(1,0,'green','yellow','indigo'));
+console.log(colors);
+
+//You can change the content of an array even 
+//if it is declared with const, but you can't reassign a new array or a different value.
