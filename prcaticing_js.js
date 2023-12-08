@@ -56,3 +56,52 @@ console.log(colors);
 
 //You can change the content of an array even 
 //if it is declared with const, but you can't reassign a new array or a different value.
+
+//Object Literals
+
+const Student = {
+    firstName: "Sujal",
+    lastName: "Acharya",
+    Age: 21,
+    Occupation: "Student",
+    Gender: "male",
+    isWorking: true,
+    hobbies: ["Coding","Watching Movies and Anime","Gaming"],
+};
+console.log(Student);
+console.log(Student["firstName"]);
+console.log(Student.lastName);
+let fullName = Student.firstName + " " + Student.lastName;
+console.log(fullName);
+
+Student.Age = 22;
+console.log(Student);
+Student.Country="Nepal";
+console.log(Student);
+
+for(let i =1; i<=10; i=i+3){
+    console.log(i);
+}
+for(let i=25;i>=0;i-=5){
+    console.log(i)
+}
+
+
+// Print a 5x5 grid of #
+for (let i = 0; i < 5; i++) {
+    let row = '';
+    for (let j = 0; j < 5; j++) {
+      row += '# ';
+    }
+    console.log(row);
+  }
+  
+//   let input = ('Enter a number');
+//   console.log(input);
+//   while(true){
+//     input = (input);
+//     if(input === 'stop'){
+//       break;
+//     }
+//     console.log("You win!");
+//   }
