@@ -46,3 +46,50 @@ function repeat(word,times){
     }
  }
  console.log(callSixTimes(rolldie));
+
+function makeBetween(min, max){
+    return function(num){
+        return num >=min && num<=max;
+    }
+}
+
+const child = makeBetween(0,17);
+console.log(child(8));
+
+const adult = makeBetween(18,64);
+console.log(adult(19)); 
+
+const old = makeBetween(65,150)
+console.log(old(68));
+
+
+const square = {
+    area(length){
+        return length*length;
+    },
+    perimeter(length){
+        return length*4;
+    }
+}
+
+console.log(square.perimeter(3));
+
+const numbers =[1,2,3]
+
+numbers.forEach(function(element){
+    console.log(element)
+});
+
+for(let el of numbers){
+    console.log(el);
+}
+
+
+
+
+
+
+
+
+
+
