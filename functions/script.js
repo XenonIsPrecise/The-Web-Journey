@@ -1,3 +1,6 @@
+const p = f=>{
+    console.log(f);
+}
 let die = Math.ceil(Math.random()*6);
 //let die = Math.floor(Math.random()*6+1); This is the same as above
 console.log(die);
@@ -83,6 +86,75 @@ numbers.forEach(function(element){
 for(let el of numbers){
     console.log(el);
 }
+
+//Map function
+
+const numMap = [1,2,3,4,5,6,7];
+
+let even = numMap.map(function(even){
+    return even*2;
+});
+console.log(even);
+
+
+const fullNames = [{first: 'Albus', last: 'Dumbledore'}, {first: 'Harry', last: 'Potter'}, {first: 'Hermione', last: 'Granger'}, {first: 'Ron', last: 'Weasley'}, {first: 'Rubeus', last: 'Hagrid'}, {first: 'Minerva', last: 'McGonagall'}, {first: 'Severus', last: 'Snape'}];
+
+const firstNames = fullNames.map(function (names){
+    return names.first;
+})
+
+console.log(firstNames);
+
+function names(name){
+    return name.first;
+}
+
+const fName =fullNames.map(names);
+console.log(fName);
+
+
+const add = function(x,y){
+    return x+y;
+}
+
+function sub(a,b){
+    return a-b;
+}
+const mul = (x,y) =>{
+    return x*y;
+}
+
+const squared = num =>{
+    return num*num;
+}
+p(squared(5));
+
+console.log(mul(2,3));
+console.log(add(2,6));
+console.log(sub(8,2));
+
+//arrow function implicit return
+
+const sqrR = num =>Math.sqrt(num);
+console.log(sqrR(16));
+
+//settimeout 
+
+setTimeout(()=>
+console.log("Hello"),3000);
+
+//filter
+const numFil =[1,2,3,4,5,6,7,8]
+const evenFil = numFil.filter(n=>n%2===0)
+console.log(evenFil);
+
+
+
+
+
+
+
+
 
 
 
