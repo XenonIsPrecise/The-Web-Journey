@@ -150,6 +150,34 @@ console.log(evenFil);
 
 
 
+const UserNames=['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan'];
+function filtered (words){
+    let filteredarray = [];
+    for(let word of words){
+        if(word.length<10){
+            filteredarray.push(word);
+        }
+    }
+    return filteredarray;
+}
+console.log(filtered(UserNames));
+//This code does the same as above
+function validUserNames(usernames) {
+    return usernames.filter(word=> word.length<10)
+}
+console.log(validUserNames(UserNames));
+
+//Arrow function does not work with this keyword when added directly. 
+//But works if there is a traditional function written that encopasses the  this keyword.
+
+//Spread 
+const sArray =[1,2,3,4,5,65356,34,534,5345,34534,534,52,578,68,678,678,67835,46,245,6]
+Math.max(1,2,3,4,5,65356,34,534,5345,34534,534,52,578,68,678,678,67835,46,245,6);
+console.log(Math.max(1,2,3,4,5,65356,34,534,5345,34534,534,52,578,68,678,678,67835,46,245,6));
+console.log(Math.max(...sArray));
+
+const [one,two] =sArray;
+
 
 
 
