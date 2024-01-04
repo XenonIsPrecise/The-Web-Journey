@@ -38,4 +38,41 @@ async function printRainbow(){
     console.log("End of rainbow")
 }
 
-printRainbow();
+
+
+
+// fetch("https://swapi.dev/api/people/1")
+// .then((res)=>{
+//     console.log("Resolved", res)
+//     res.json()
+//     .then((data)=>{
+//         console.log(data)
+//         return fetch("https://swapi.dev/api/planets/2")
+//     })
+//     .then((res)=>{
+//         console.log("Second Person",res)
+//         return res.json()
+//     })
+//     .then((data)=>{
+//         console.log(data)
+//     })
+// })
+// .catch((err)=>{
+//     console.log("Error",err)
+// })
+
+const starWarsPeople = async()=>{
+    try {
+        const data1 = await fetch("https://swapi.dev/api/people/1");
+        const pdata1 = await data1.json()
+        console.log(pdata1);
+}
+     catch (error) {
+        console.log("Error",error)
+    }
+}
+
+starWarsPeople();
+    
+
+    
